@@ -1,49 +1,65 @@
 // Created by: V3 Code Studio
 // Email: v3codestudio@gmail.com
 
+/// A library providing a customizable alert dialog component for Flutter applications.
+library v3c_alert;
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-/// The VVAlertDialog class defines a customizable alert dialog component.
-/// It requires parameters for the build context,
-/// title,
-/// description, and alert type.
-///
-/// Optional parameters include methods to handle button presses (okOnPress and cancelOnPress),
-/// as well as custom button text (okButtonText and cancelButtonText).
+/// Defines the type of alert dialog to display, such as success, error, info, or warning.
 enum V3CAlertType { success, error, info, warning }
 
+/// A customizable alert dialog widget for Flutter applications.
+///
+/// This widget displays an alert dialog with a title, description, and customizable
+/// buttons based on the specified [alertType]. It supports optional callbacks for
+/// button presses and customizable button text.
 class V3CAlert extends StatefulWidget {
+  /// The build context used to show the dialog.
   final BuildContext context;
 
-  // Alert Type
+  /// The type of alert to display, determining the icon and color scheme.
   final V3CAlertType alertType;
 
-  // Title and Description
+  /// The title text displayed at the top of the alert dialog.
   final String title;
+
+  /// The description text displayed in the body of the alert dialog.
   final String description;
 
-  // Button Text
+  /// The text for the OK button. If empty, the OK button is not shown.
   final String okButtonText;
+
+  /// The text for the cancel button. If empty, defaults to "Close".
   final String cancelButtonText;
 
-  // Callback
+  /// Callback function invoked when the OK button is pressed.
   final VoidCallback? okOnPress;
+
+  /// Callback function invoked when the cancel button is pressed.
   final VoidCallback? cancelOnPress;
 
+  /// Whether the dialog can be dismissed by tapping outside of it.
   final bool barrierDismissible;
+
+  /// Whether the dialog can be dismissed by pressing the back key.
   final bool dismissOnBackKeyPress;
 
+  /// Creates a [V3CAlert] widget.
+  ///
+  /// The [context], [title], [description], and [alertType] parameters are required.
+  /// The [okOnPress] and [cancelOnPress] callbacks are optional, as are [okButtonText]
+  /// and [cancelButtonText]. The [barrierDismissible] and [dismissOnBackKeyPress]
+  /// parameters default to `false`.
   const V3CAlert({
     super.key,
     required this.context,
     required this.title,
     required this.description,
     required this.alertType,
-    // On Pressed Method
     this.okOnPress,
     required this.cancelOnPress,
-    // Button Text
     this.okButtonText = "",
     this.cancelButtonText = "",
     this.barrierDismissible = false,
@@ -53,7 +69,7 @@ class V3CAlert extends StatefulWidget {
   @override
   State<V3CAlert> createState() => _V3CAlertState();
 
-  // Method to show the dialog
+  /// Displays the alert dialog in the provided [context].
   void show() {
     showDialog(
       context: context,

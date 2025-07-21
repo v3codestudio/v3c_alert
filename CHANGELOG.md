@@ -1,6 +1,13 @@
 # Changelog
 
-## [1.0.0] - Initial Release
+## 1.0.2 - 2025-07-21
 
-- Added `V3CAlertDialog` widget with support for `error`, `warning`, `success`, and `info` types.
-- Customizable title, description, OK, and Cancel callbacks.
+- Implemented `V3CAlert` widget for customizable alert dialogs with success, error, info, and warning types.
+
+## 1.0.1
+
+- Implemented `V3CAlert` widget for customizable alert dialogs with success, error, info, and warning types.
+
+## 1.0.0
+
+- Initial version of the package.
