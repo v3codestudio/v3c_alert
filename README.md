@@ -40,7 +40,7 @@ Here's how you can use the `V3CAlertDialog` in your app:
 
 ## Success Alert
 
-![alt text](/assets/screenshots/success_dialog.png)
+![alt text](https://raw.githubusercontent.com/v3codestudio/v3c_alert/main/assets/screenshots/success_dialog.png)
 
 ```dart
 void _showSuccessAlert() {
@@ -65,7 +65,7 @@ void _showSuccessAlert() {
 
 ## Error Alert
 
-![alt text](/assets/screenshots/error_dialog.png)
+![alt text](https://raw.githubusercontent.com/v3codestudio/v3c_alert/main/assets/screenshots/error_dialog.png)
 
 ```dart
 void _showErrorAlert() {
@@ -91,7 +91,7 @@ void _showErrorAlert() {
 
 ## Warning Alert
 
-![alt text](/assets/screenshots/warning_dialog.png)
+![alt text](https://raw.githubusercontent.com/v3codestudio/v3c_alert/main/assets/screenshots/warning_dialog.png)
 
 ```dart
 void _showWarningAlert() {
@@ -117,7 +117,7 @@ void _showWarningAlert() {
 
 ## Info Alert
 
-![alt text](/assets/screenshots/info_dialog.png)
+![alt text](https://raw.githubusercontent.com/v3codestudio/v3c_alert/main/assets/screenshots/info_dialog.png)
 
 ```dart
 void _showInfoAlert() {
@@ -155,4 +155,5 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+
 © 2025 V3 Code Studio. All rights reserved.

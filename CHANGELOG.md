@@ -1,6 +1,10 @@
 # Changelog
 
-## 1.0.3 - 2025-07-21
+## 1.0.4 - 2025-07-21
+
+- Screenshot added in Readme.md
+
+## 1.0.3
 
 - Minor Updates
 
