@@ -1,6 +1,10 @@
 # Changelog
 
-## 1.0.4 - 2025-07-21
+## 1.0.5 - 2025-07-21
+
+- Improved package documentation for better clarity and usability.
+
+## 1.0.4
 
 - Screenshot added in Readme.md
 
