@@ -1,20 +1,27 @@
 # V3C Alert
 
-A customizable Flutter alert dialog widget supporting success, warning, error, and info alerts.
+[![Pub Version](https://img.shields.io/pub/v/v3c_alert.svg)](https://pub.dev/packages/v3c_alert)
+![Platform](https://img.shields.io/badge/platform-Android%20|%20iOS%20|%20Linux%20|%20macOS%20|%20Web%20|%20Windows-blue)
+![SDK](https://img.shields.io/badge/SDK-Flutter-blue)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Likes](https://img.shields.io/pub/likes/v3c_alert)](https://pub.dev/packages/v3c_alert/score)
+
+> A customizable Flutter alert dialog widget supporting success, warning, error, and info alerts.
 
 ## Features
 
-- Different alert types with unique styles and icons: Success, Error, Warning, and Info.
-- Fully customizable with callbacks for OK and Cancel buttons.
-- Animation support when displaying alerts.
+- 🎨 Different alert types: **Success**, **Error**, **Warning**, **Info**
+- 🛠️ Fully customizable: titles, descriptions, button actions
+- 🎞️ Smooth animation support when displaying alerts
+- ✅ Callbacks for both `OK` and `Cancel` buttons
 
-## Installation
+## 📦 Installation
 
 Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  v3c_alert: ^1.0.0
+  v3c_alert:
 ```
 
 Run `flutter pub get` to install the package.
@@ -140,3 +147,4 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+© 2025 V3 Code Studio. All rights reserved.
