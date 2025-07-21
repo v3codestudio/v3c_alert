@@ -1,7 +1,7 @@
 name: v3c_alert
-description: "A customizable alert dialog widget for Flutter with success, warning, info, and error types."
+description: A customizable alert dialog widget for Flutter with success, warning, info, and error types.
 version: 1.0.0
-homepage: https://github.com/your-username/v3c_alert
+homepage: https://github.com/v3codestudio/v3c_alert
 
 environment:
   sdk: ^3.7.2
