@@ -11,7 +11,7 @@ import 'package:flutter/services.dart';
 ///
 /// Optional parameters include methods to handle button presses (okOnPress and cancelOnPress),
 /// as well as custom button text (okButtonText and cancelButtonText).
-enum V3CAlertType { success, error, info }
+enum V3CAlertType { success, error, info, warning }
 
 class V3CAlert extends StatefulWidget {
   final BuildContext context;
@@ -68,13 +68,15 @@ class V3CAlert extends StatefulWidget {
 class _V3CAlertState extends State<V3CAlert> {
   Color alertColorSuccess = Colors.green[700]!;
   Color alertColorError = Colors.red;
-  Color alertColorInfo = Colors.yellow[800]!;
+  Color alertColorWarning = Colors.yellow[800]!;
+  Color alertColorInfo = Colors.blue[800]!;
 
   // focus node to capture keyboard events
   final FocusNode _focusNode = FocusNode();
 
   IconData iconCheckBox = Icons.check_circle_rounded;
   IconData iconInfo = Icons.info;
+  IconData iconWarning = Icons.warning;
   IconData iconError = Icons.bug_report;
 
   // Method of Success
@@ -97,6 +99,11 @@ class _V3CAlertState extends State<V3CAlert> {
       case V3CAlertType.info:
         {
           prepareIcon = iconInfo;
+        }
+        break;
+      case V3CAlertType.warning:
+        {
+          prepareIcon = iconWarning;
         }
         break;
     }
@@ -123,6 +130,11 @@ class _V3CAlertState extends State<V3CAlert> {
       case V3CAlertType.info:
         {
           prepareAlertColor = alertColorInfo;
+        }
+        break;
+      case V3CAlertType.warning:
+        {
+          prepareAlertColor = alertColorWarning;
         }
         break;
     }
