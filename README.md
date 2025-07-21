@@ -40,6 +40,8 @@ Here's how you can use the `V3CAlertDialog` in your app:
 
 ## Success Alert
 
+![alt text](/assets/screenshots/success_dialog.png)
+
 ```dart
 void _showSuccessAlert() {
   V3CAlert(
@@ -62,6 +64,8 @@ void _showSuccessAlert() {
 ```
 
 ## Error Alert
+
+![alt text](/assets/screenshots/error_dialog.png)
 
 ```dart
 void _showErrorAlert() {
@@ -87,6 +91,8 @@ void _showErrorAlert() {
 
 ## Warning Alert
 
+![alt text](/assets/screenshots/warning_dialog.png)
+
 ```dart
 void _showWarningAlert() {
   V3CAlert(
@@ -110,6 +116,8 @@ void _showWarningAlert() {
 ```
 
 ## Info Alert
+
+![alt text](/assets/screenshots/info_dialog.png)
 
 ```dart
 void _showInfoAlert() {

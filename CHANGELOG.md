@@ -1,6 +1,10 @@
 # Changelog
 
-## 1.0.2 - 2025-07-21
+## 1.0.3 - 2025-07-21
+
+- Minor Updates
+
+## 1.0.2
 
 - Implemented `V3CAlert` widget for customizable alert dialogs with success, error, info, and warning types.
 
