@@ -152,6 +152,12 @@ For a complete example, see the `example` project.
 
 Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
+## 👥 Contributors
+
+| [<img src="https://github.com/VivekVithlani.png" width="50px" />](https://github.com/VivekVithlani) |
+| :-------------------------------------------------------------------------------------------------: |
+|                         [Vivek Vithalani](https://github.com/VivekVithlani)                         |
+
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
