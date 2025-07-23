@@ -1,5 +1,7 @@
 # V3C Alert
 
+[![Buy Me A Coffee](https://img.shields.io/badge/-Buy%20me%20a%20coffee-%23FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://v3codestudio.gumroad.com/l/v3c_alert)
+
 [![Pub Version](https://img.shields.io/pub/v/v3c_alert.svg)](https://pub.dev/packages/v3c_alert)
 ![Platform](https://img.shields.io/badge/platform-Android%20|%20iOS%20|%20Linux%20|%20macOS%20|%20Web%20|%20Windows-blue)
 ![SDK](https://img.shields.io/badge/SDK-Flutter-blue)
