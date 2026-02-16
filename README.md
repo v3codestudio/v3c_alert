@@ -151,6 +151,12 @@ void _showInfoAlert() {
 }
 ```
 
+## Custom Text Alert
+
+| Web | Mobile |
+|:---:|:------:|
+| ![Web Custom Text](https://raw.githubusercontent.com/v3codestudio/v3c_alert/main/assets/screenshots/custom_text_dialog.png) | ![Mobile Custom Text](https://raw.githubusercontent.com/v3codestudio/v3c_alert/main/assets/mobile/mobile_custom_text.jpg) |
+
 For a complete example, see the `example` project.
 
 ## Roadmap
