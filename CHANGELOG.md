@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.0 - 2026-02-16
+
+- Ok button text issue fixed.
+- Cancel button text issue fixed.
+- Minor changes.
+
 ## 1.0.6 - 2025-07-21
 
 - Added Contributors section in README.md

@@ -40,7 +40,9 @@ void main() {
       expect(find.text('This is a test alert'), findsOneWidget);
     });
 
-    testWidgets('Alert shows with different types', (WidgetTester tester) async {
+    testWidgets('Alert shows with different types', (
+      WidgetTester tester,
+    ) async {
       await tester.pumpWidget(
         MaterialApp(
           home: Builder(
@@ -110,6 +112,50 @@ void main() {
       // Verify the dialog content
       expect(find.text('Error Alert'), findsOneWidget);
       expect(find.text('This is an error alert'), findsOneWidget);
+    });
+    testWidgets('Alert shows with custom button text', (
+      WidgetTester tester,
+    ) async {
+      await tester.pumpWidget(
+        MaterialApp(
+          home: Builder(
+            builder: (context) {
+              return Scaffold(
+                body: Center(
+                  child: ElevatedButton(
+                    onPressed: () {
+                      V3CAlert(
+                        context: context,
+                        title: 'Custom Text',
+                        description: 'This is an alert with custom button text',
+                        alertType: V3CAlertType.success,
+                        okButtonText: 'Great!',
+                        cancelButtonText: 'Disregard',
+                        okOnPress: () {},
+                        cancelOnPress: () {},
+                      ).show();
+                    },
+                    child: const Text('Show Custom Alert'),
+                  ),
+                ),
+              );
+            },
+          ),
+        ),
+      );
+
+      // Tap button to show dialog
+      await tester.tap(find.text('Show Custom Alert'));
+      await tester.pumpAndSettle();
+
+      // Verify the dialog content
+      expect(find.text('Custom Text'), findsOneWidget);
+      expect(
+        find.text('This is an alert with custom button text'),
+        findsOneWidget,
+      );
+      expect(find.text('Great!'), findsOneWidget);
+      expect(find.text('Disregard'), findsOneWidget);
     });
   });
 }

@@ -1,14 +1,24 @@
 // Created by: V3 Code Studio
 // Email: v3codestudio@gmail.com
 
-/// A library providing a customizable alert dialog component for Flutter applications.
-library v3c_alert;
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 /// Defines the type of alert dialog to display, such as success, error, info, or warning.
-enum V3CAlertType { success, error, info, warning }
+/// Defines the type of alert dialog to display, such as success, error, info, or warning.
+enum V3CAlertType {
+  /// Indicates a successful operation.
+  success,
+
+  /// Indicates an error occurred.
+  error,
+
+  /// Indicates an informational message.
+  info,
+
+  /// Indicates a warning message.
+  warning,
+}
 
 /// A customizable alert dialog widget for Flutter applications.
 ///
@@ -252,7 +262,10 @@ class _V3CAlertState extends State<V3CAlert> {
             visible: widget.okButtonText.isNotEmpty,
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(backgroundColor: getAlertColor()),
-              child: const Text('Ok', style: TextStyle(color: Colors.white)),
+              child: Text(
+                widget.okButtonText,
+                style: const TextStyle(color: Colors.white),
+              ),
               onPressed: () async {
                 // Close the alert
                 Navigator.of(context).pop();
@@ -267,7 +280,12 @@ class _V3CAlertState extends State<V3CAlert> {
             visible: true,
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(backgroundColor: getAlertColor()),
-              child: const Text('Close', style: TextStyle(color: Colors.white)),
+              child: Text(
+                widget.cancelButtonText.isEmpty
+                    ? 'Close'
+                    : widget.cancelButtonText,
+                style: const TextStyle(color: Colors.white),
+              ),
               onPressed: () async {
                 // Close the alert
                 Navigator.of(context).pop();

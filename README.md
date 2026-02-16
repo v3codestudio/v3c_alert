@@ -42,7 +42,9 @@ Here's how you can use the `V3CAlertDialog` in your app:
 
 ## Success Alert
 
-![alt text](https://raw.githubusercontent.com/v3codestudio/v3c_alert/main/assets/screenshots/success_dialog.png)
+|                                                         Web                                                         |                                                          Mobile                                                          |
+| :-----------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------: |
+| ![Web Success](https://raw.githubusercontent.com/v3codestudio/v3c_alert/main/assets/screenshots/success_dialog.png) | ![Mobile Success](https://raw.githubusercontent.com/v3codestudio/v3c_alert/main/assets/mobile/mobile_success_dialog.jpg) |
 
 ```dart
 void _showSuccessAlert() {
@@ -67,7 +69,9 @@ void _showSuccessAlert() {
 
 ## Error Alert
 
-![alt text](https://raw.githubusercontent.com/v3codestudio/v3c_alert/main/assets/screenshots/error_dialog.png)
+|                                                       Web                                                       |                                                        Mobile                                                        |
+| :-------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------: |
+| ![Web Error](https://raw.githubusercontent.com/v3codestudio/v3c_alert/main/assets/screenshots/error_dialog.png) | ![Mobile Error](https://raw.githubusercontent.com/v3codestudio/v3c_alert/main/assets/mobile/mobile_error_dialog.jpg) |
 
 ```dart
 void _showErrorAlert() {
@@ -93,7 +97,9 @@ void _showErrorAlert() {
 
 ## Warning Alert
 
-![alt text](https://raw.githubusercontent.com/v3codestudio/v3c_alert/main/assets/screenshots/warning_dialog.png)
+|                                                         Web                                                         |                                                          Mobile                                                          |
+| :-----------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------: |
+| ![Web Warning](https://raw.githubusercontent.com/v3codestudio/v3c_alert/main/assets/screenshots/warning_dialog.png) | ![Mobile Warning](https://raw.githubusercontent.com/v3codestudio/v3c_alert/main/assets/mobile/mobile_warning_dialog.jpg) |
 
 ```dart
 void _showWarningAlert() {
@@ -119,7 +125,9 @@ void _showWarningAlert() {
 
 ## Info Alert
 
-![alt text](https://raw.githubusercontent.com/v3codestudio/v3c_alert/main/assets/screenshots/info_dialog.png)
+|                                                      Web                                                      |                                                       Mobile                                                       |
+| :-----------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------: |
+| ![Web Info](https://raw.githubusercontent.com/v3codestudio/v3c_alert/main/assets/screenshots/info_dialog.png) | ![Mobile Info](https://raw.githubusercontent.com/v3codestudio/v3c_alert/main/assets/mobile/mobile_info_dialog.jpg) |
 
 ```dart
 void _showInfoAlert() {
