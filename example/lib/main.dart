@@ -165,11 +165,41 @@ class _V3CAlertDemoPageState extends State<V3CAlertDemoPage> {
             ),
             const SizedBox(height: 12),
 
+            const SizedBox(height: 12),
             // Info Alert Button
             ElevatedButton.icon(
               onPressed: _showInfoAlert,
               icon: const Icon(Icons.info, color: Colors.blue),
               label: const Text('Show Info Alert'),
+              style: ElevatedButton.styleFrom(
+                padding: const EdgeInsets.all(16),
+              ),
+            ),
+            const SizedBox(height: 12),
+            // Custom Text Alert Button
+            ElevatedButton.icon(
+              onPressed: () {
+                V3CAlert(
+                  context: context,
+                  title: 'Custom Text',
+                  description: 'This is an alert with custom button text.',
+                  alertType: V3CAlertType.success,
+                  okButtonText: 'Great!',
+                  cancelButtonText: 'Disregard',
+                  okOnPress: () {
+                    setState(() {
+                      _lastAction = 'Custom alert - Great pressed';
+                    });
+                  },
+                  cancelOnPress: () {
+                    setState(() {
+                      _lastAction = 'Custom alert - Disregard pressed';
+                    });
+                  },
+                ).show();
+              },
+              icon: const Icon(Icons.text_fields, color: Colors.purple),
+              label: const Text('Show Custom Text Alert'),
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.all(16),
               ),
